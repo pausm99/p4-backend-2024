@@ -1,0 +1,122 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "leagues-api",
+    "collectionId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+    "dateExported": "2024-05-27T19:00:48.719Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "8e5c52af-8deb-4a07-b9d2-09d26f4d1385",
+            "name": "CREATE",
+            "containerId": "7f128b79-a1c2-4a16-848b-88c7665b54b9",
+            "created": "2024-05-27T18:27:36.903Z",
+            "sortNum": 5000
+        },
+        {
+            "_id": "4783cecb-e085-4a41-9668-aa041671e651",
+            "name": "READ",
+            "containerId": "7f128b79-a1c2-4a16-848b-88c7665b54b9",
+            "created": "2024-05-27T18:25:50.546Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "7f128b79-a1c2-4a16-848b-88c7665b54b9",
+            "name": "leagues",
+            "containerId": "",
+            "created": "2024-05-27T18:26:22.621Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "ef11ca6a-98a1-4136-bc82-58a08d002214",
+            "name": "UPDATE",
+            "containerId": "7f128b79-a1c2-4a16-848b-88c7665b54b9",
+            "created": "2024-05-27T18:56:16.777Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "048bf782-525e-4297-aad8-f29240c3a8e7",
+            "name": "DELETE",
+            "containerId": "7f128b79-a1c2-4a16-848b-88c7665b54b9",
+            "created": "2024-05-27T18:41:56.836Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "b1dcc244-c107-4525-bd52-696eaab07ae0",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "4783cecb-e085-4a41-9668-aa041671e651",
+            "name": "Get all leagues",
+            "url": "/leagues",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-27T18:19:57.527Z",
+            "modified": "2024-05-27T18:23:06.313Z",
+            "headers": []
+        },
+        {
+            "_id": "3b11589a-1464-49f9-ac86-5b2f633ad280",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "4783cecb-e085-4a41-9668-aa041671e651",
+            "name": "Get league by ID",
+            "url": "/leagues/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-05-27T18:26:07.682Z",
+            "modified": "2024-05-27T18:26:52.377Z",
+            "headers": []
+        },
+        {
+            "_id": "33460ce4-1cd1-4963-af3a-844f5d4af5ac",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "8e5c52af-8deb-4a07-b9d2-09d26f4d1385",
+            "name": "Create new league",
+            "url": "/leagues",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-05-27T18:28:08.335Z",
+            "modified": "2024-05-27T18:41:27.568Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Bundesliga\",\n  \"country\": \"Germany\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b62670cd-b355-4074-8623-faa9d624e220",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "048bf782-525e-4297-aad8-f29240c3a8e7",
+            "name": "Delete league",
+            "url": "/leagues/17",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-05-27T18:42:07.373Z",
+            "modified": "2024-05-27T19:00:39.144Z",
+            "headers": []
+        },
+        {
+            "_id": "4ecb9e88-413c-4b4f-be8d-651551a75b98",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "ef11ca6a-98a1-4136-bc82-58a08d002214",
+            "name": "Update league",
+            "url": "/leagues/17",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-05-27T18:56:37.631Z",
+            "modified": "2024-05-27T18:59:01.611Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Bundesliga (DFB)\",\n  \"country\": \"Germany\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "http://localhost:3000"
+        }
+    },
+    "ref": "IrTdzClz4AMAhS9xaCrwxu6Emj8slFPXfFSerr8NwOixbfvmZA9isjxMAuao-F75xu6Y0jutX7gu-pG7yWQgmw"
+}
