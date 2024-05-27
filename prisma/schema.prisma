@@ -12,3 +12,50 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+model League {
+  leagueId Int    @id @default(autoincrement())
+  name     String @unique
+  country  String
+  teams    Team[]
+}
+
+model Team {
+  teamId   Int      @id @default(autoincrement())
+  name     String
+  leagueId Int
+  league   League   @relation(fields: [leagueId], references: [leagueId], onDelete: Cascade, onUpdate: Cascade)
+  city     String
+  players  Player[]
+}
+
+model Player {
+  playerId    Int           @id @default(autoincrement())
+  name        String
+  teamId      Int
+  team        Team          @relation(fields: [teamId], references: [teamId], onDelete: Cascade, onUpdate: Cascade)
+  position    Position
+  age         Int
+  height      Float
+  weight      Float
+  playerStats PlayerStats[]
+}
+
+model PlayerStats {
+  playerStatsId Int    @id @default(autoincrement())
+  season        String
+  playerId      Int
+  player        Player @relation(fields: [playerId], references: [playerId], onDelete: Cascade, onUpdate: Cascade)
+  appearances   Int
+  goals         Int
+  assists       Int
+  yellowCards   Int
+  redCards      Int
+}
+
+enum Position {
+  Goalkeeper
+  Defender
+  Midfielder
+  Forward
+}
