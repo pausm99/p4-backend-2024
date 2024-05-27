@@ -1,5 +1,4 @@
 import express from 'express'
-import process from 'process';
 
 const app = express()
 
