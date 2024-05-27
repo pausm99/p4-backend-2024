@@ -23,8 +23,17 @@ export const defaultErrorHandler: ErrorRequestHandler = (
       return send(res).notFound();
     case "ZodError":
       return send(res).badRequest(zodErrorMessage(err));
+    case "PrismaClientKnownRequestError":
+      switch (err.code) {
+        case "P2002":
+          return send(res).conflict(err)
+        case "P2025":
+          return send(res).notFound();
+        default:
+          return send(res).internalError(`Internal error.`);
+      }
     default:
-      return send(res).notFound();
+      return send(res).internalError(`Internal error.`);
   }
 };
 

@@ -7,6 +7,7 @@ enum HttpStatusCode {
     UNAUTHORIZED = 401,
     FORBIDDEN = 403,
     NOT_FOUND = 404,
+    CONFLICT = 409,
     INTERNAL_SERVER_ERROR = 500,
     NOT_IMPLEMENTED = 501
 }
@@ -18,6 +19,7 @@ export const send = (res: ExpressResponse) => {
         notFound: () => res.status(HttpStatusCode.NOT_FOUND).send('Not found'),
         badRequest: (msg: string) => res.status(HttpStatusCode.BAD_REQUEST).send(msg),
         notImplemented: () => res.status(HttpStatusCode.NOT_IMPLEMENTED).send('Not implemented'),
+        conflict: (msg: string) => res.status(HttpStatusCode.CONFLICT).send(msg),
         internalError: (msg: string) => res.status(HttpStatusCode.INTERNAL_SERVER_ERROR).send(msg),
     }
 }
