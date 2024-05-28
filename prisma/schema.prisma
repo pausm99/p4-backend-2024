@@ -22,7 +22,7 @@ model League {
 
 model Team {
   teamId   Int      @id @default(autoincrement())
-  name     String
+  name     String   @unique
   leagueId Int
   league   League   @relation(fields: [leagueId], references: [leagueId], onDelete: Cascade, onUpdate: Cascade)
   city     String
