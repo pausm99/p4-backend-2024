@@ -27,6 +27,8 @@ export const defaultErrorHandler: ErrorRequestHandler = (
       switch (err.code) {
         case "P2002":
           return send(res).conflict(err)
+        case "P2003":
+          return send(res).notFound()
         case "P2025":
           return send(res).notFound();
         default:
