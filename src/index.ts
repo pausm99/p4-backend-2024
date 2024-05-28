@@ -1,12 +1,12 @@
-import express from 'express'
-import leagueRoutes from './routes/leagueRoutes';
+import express from 'express';
 import { defaultErrorHandler } from './handlers/errors';
+import routes from './routes/index';
 
 const app = express()
 
 app.use(express.json())
 
-app.use('/leagues', leagueRoutes)
+app.use('/', routes)
 
 app.use(defaultErrorHandler);
 
