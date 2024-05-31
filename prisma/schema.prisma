@@ -53,6 +53,8 @@ model PlayerStats {
   assists       Int
   yellowCards   Int
   redCards      Int
+
+  @@unique([season, playerId])
 }
 
 enum Position {
