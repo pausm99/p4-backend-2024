@@ -1,5 +1,5 @@
 import express from 'express'
-import { PlayerStats } from '../controllers/playerStatsController'
+import { PlayerStats } from '../../controllers/core/playerStatsController'
 
 const router = express.Router()
 

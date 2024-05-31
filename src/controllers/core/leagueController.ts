@@ -1,8 +1,8 @@
 import type { Request, Response } from "express";
 import { z } from "zod";
-import db from "../db/db";
-import { catchErrors } from "../handlers/errors";
-import { send } from "../handlers/response";
+import db from "../../db/db";
+import { catchErrors } from "../../handlers/errors";
+import { send } from "../../handlers/response";
 
 const idParamSchema = z.object({
   id: z.coerce.number(),
