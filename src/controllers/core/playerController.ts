@@ -1,7 +1,7 @@
 import type { Request, Response } from "express";
-import { catchErrors } from "../handlers/errors";
-import db from "../db/db";
-import { send } from "../handlers/response";
+import { catchErrors } from "../../handlers/errors";
+import db from "../../db/db";
+import { send } from "../../handlers/response";
 import { z } from "zod";
 
 const idParamSchema = z.object({
