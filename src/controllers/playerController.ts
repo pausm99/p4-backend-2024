@@ -8,10 +8,6 @@ const idParamSchema = z.object({
   id: z.coerce.number(),
 });
 
-const teamIdBodySchema = z.object({
-  teamId: z.coerce.number().min(1),
-});
-
 const playerBodySchema = z.object({
   name: z.string().min(3).max(50),
   teamId: z.coerce.number().min(1),
