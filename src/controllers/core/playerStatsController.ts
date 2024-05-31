@@ -1,8 +1,8 @@
 import type { Request, Response } from "express";
 import { z } from "zod";
-import db from "../db/db";
-import { catchErrors } from "../handlers/errors";
-import { send } from "../handlers/response";
+import db from "../../db/db";
+import { catchErrors } from "../../handlers/errors";
+import { send } from "../../handlers/response";
 
 const idParamSchema = z.object({
   id: z.coerce.number(),
@@ -46,6 +46,16 @@ export class PlayerStats {
     const data = playerStatsBodySchema.parse(req.body)
     const createdPlayerStats = await db.playerStats.create({ data })
     return send(res).createOk(createdPlayerStats)
+  })
+
+  updateStats = catchErrors(async (req: Request, res: Response) => {
+    const { id: playerStatsId } = idParamSchema.parse(req.params)
+    const data = playerStatsBodySchema.parse(req.body);
+    const updatedStats = await db.playerStats.update({
+      where: { playerStatsId },
+      data
+    })
+    return send(res).ok(updatedStats)
   })
 
   deleteStats = catchErrors(async (req: Request, res: Response) => {
