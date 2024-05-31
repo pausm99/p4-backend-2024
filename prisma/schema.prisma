@@ -39,6 +39,8 @@ model Player {
   height      Float
   weight      Float
   playerStats PlayerStats[]
+
+  @@unique([name, teamId])
 }
 
 model PlayerStats {
