@@ -2,7 +2,7 @@
     "clientName": "Thunder Client",
     "collectionName": "leagues-api",
     "collectionId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
-    "dateExported": "2024-05-27T19:00:48.719Z",
+    "dateExported": "2024-06-01T18:48:19.528Z",
     "version": "1.2",
     "folders": [
         {
@@ -34,11 +34,123 @@
             "sortNum": 30000
         },
         {
+            "_id": "901e694c-1ba2-4918-836a-88b2faae01c3",
+            "name": "CREATE",
+            "containerId": "e405ac30-9d0e-4630-ba9c-cad4c00920ad",
+            "created": "2024-05-28T07:41:04.136Z",
+            "sortNum": 35000
+        },
+        {
             "_id": "048bf782-525e-4297-aad8-f29240c3a8e7",
             "name": "DELETE",
             "containerId": "7f128b79-a1c2-4a16-848b-88c7665b54b9",
             "created": "2024-05-27T18:41:56.836Z",
             "sortNum": 50000
+        },
+        {
+            "_id": "6c625093-84ac-4ff1-98c9-9c8e47e66cf0",
+            "name": "CREATE",
+            "containerId": "0a94b6cb-6a37-4537-b0ac-518910576157",
+            "created": "2024-05-29T17:37:15.831Z",
+            "sortNum": 55000
+        },
+        {
+            "_id": "e405ac30-9d0e-4630-ba9c-cad4c00920ad",
+            "name": "teams",
+            "containerId": "",
+            "created": "2024-05-28T07:25:33.522Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "28ea1e6b-baa6-4388-9dde-e0ffcd782060",
+            "name": "READ",
+            "containerId": "e405ac30-9d0e-4630-ba9c-cad4c00920ad",
+            "created": "2024-05-28T07:25:45.167Z",
+            "sortNum": 70000
+        },
+        {
+            "_id": "ed1aa384-682a-4c9d-b451-eb48f6c1596f",
+            "name": "UPDATE",
+            "containerId": "e405ac30-9d0e-4630-ba9c-cad4c00920ad",
+            "created": "2024-05-29T17:14:30.024Z",
+            "sortNum": 75000
+        },
+        {
+            "_id": "ea06c62b-9d5c-410c-b292-fe126d069663",
+            "name": "DELETE",
+            "containerId": "e405ac30-9d0e-4630-ba9c-cad4c00920ad",
+            "created": "2024-05-29T17:07:59.929Z",
+            "sortNum": 80000
+        },
+        {
+            "_id": "0a94b6cb-6a37-4537-b0ac-518910576157",
+            "name": "players",
+            "containerId": "",
+            "created": "2024-05-29T17:25:22.207Z",
+            "sortNum": 100000
+        },
+        {
+            "_id": "7b9f2b17-10c7-4117-9ffb-b217bdaf58c8",
+            "name": "READ",
+            "containerId": "0a94b6cb-6a37-4537-b0ac-518910576157",
+            "created": "2024-05-29T17:37:06.088Z",
+            "sortNum": 110000
+        },
+        {
+            "_id": "d43639e8-6597-4338-853b-67753f06cce2",
+            "name": "UPDATE",
+            "containerId": "0a94b6cb-6a37-4537-b0ac-518910576157",
+            "created": "2024-05-31T07:12:58.685Z",
+            "sortNum": 125000
+        },
+        {
+            "_id": "594fdca1-7c25-4b5f-a467-8e7f245b5433",
+            "name": "DELETE",
+            "containerId": "0a94b6cb-6a37-4537-b0ac-518910576157",
+            "created": "2024-05-31T07:09:40.547Z",
+            "sortNum": 130000
+        },
+        {
+            "_id": "48f71669-3520-43d5-a903-c8666bc9f55c",
+            "name": "playerStats",
+            "containerId": "",
+            "created": "2024-05-31T16:07:01.112Z",
+            "sortNum": 140000
+        },
+        {
+            "_id": "573f62d7-ced2-4910-9eb4-e6fda3e5416f",
+            "name": "CREATE",
+            "containerId": "48f71669-3520-43d5-a903-c8666bc9f55c",
+            "created": "2024-05-31T16:28:10.982Z",
+            "sortNum": 150000
+        },
+        {
+            "_id": "c2c9e313-81e4-4b90-886d-e9f50bbf48bf",
+            "name": "READ",
+            "containerId": "48f71669-3520-43d5-a903-c8666bc9f55c",
+            "created": "2024-05-31T16:28:15.472Z",
+            "sortNum": 160000
+        },
+        {
+            "_id": "226e60da-5e1b-4584-b8aa-15a58a22543d",
+            "name": "UPDATE",
+            "containerId": "48f71669-3520-43d5-a903-c8666bc9f55c",
+            "created": "2024-05-31T16:42:45.206Z",
+            "sortNum": 170000
+        },
+        {
+            "_id": "20faa784-5848-48d5-b39f-b04e49c75cee",
+            "name": "DELETE",
+            "containerId": "48f71669-3520-43d5-a903-c8666bc9f55c",
+            "created": "2024-05-31T16:42:51.180Z",
+            "sortNum": 180000
+        },
+        {
+            "_id": "24912824-3f28-4b4e-95f3-68b7c160b80b",
+            "name": "users",
+            "containerId": "",
+            "created": "2024-06-01T16:55:03.472Z",
+            "sortNum": 190000
         }
     ],
     "requests": [
@@ -51,7 +163,31 @@
             "method": "GET",
             "sortNum": 10000,
             "created": "2024-05-27T18:19:57.527Z",
-            "modified": "2024-05-27T18:23:06.313Z",
+            "modified": "2024-06-01T18:47:36.557Z",
+            "headers": []
+        },
+        {
+            "_id": "f87eaa34-dcbc-4f2e-9876-9c7a01dfc72a",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "7b9f2b17-10c7-4117-9ffb-b217bdaf58c8",
+            "name": "Get all players",
+            "url": "/players",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-29T17:25:43.131Z",
+            "modified": "2024-05-29T17:25:50.779Z",
+            "headers": []
+        },
+        {
+            "_id": "467609b1-f2f5-4fc8-b446-c9d2e56b8384",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "c2c9e313-81e4-4b90-886d-e9f50bbf48bf",
+            "name": "Get all players statistics",
+            "url": "/playerStats",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-31T16:07:10.133Z",
+            "modified": "2024-05-31T16:07:18.452Z",
             "headers": []
         },
         {
@@ -64,6 +200,30 @@
             "sortNum": 20000,
             "created": "2024-05-27T18:26:07.682Z",
             "modified": "2024-05-27T18:26:52.377Z",
+            "headers": []
+        },
+        {
+            "_id": "2845a437-0dea-4bcb-9c5c-bdee35c24d86",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "7b9f2b17-10c7-4117-9ffb-b217bdaf58c8",
+            "name": "Get player by ID",
+            "url": "/players/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-05-29T17:27:58.067Z",
+            "modified": "2024-05-29T17:28:25.944Z",
+            "headers": []
+        },
+        {
+            "_id": "f7b57163-87fc-4201-b378-5ebecdc8d1a6",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "c2c9e313-81e4-4b90-886d-e9f50bbf48bf",
+            "name": "Get single statistics report",
+            "url": "/playerStats/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-05-31T16:12:55.993Z",
+            "modified": "2024-05-31T16:13:31.130Z",
             "headers": []
         },
         {
@@ -82,6 +242,18 @@
                 "raw": "{\n  \"name\": \"Bundesliga\",\n  \"country\": \"Germany\"\n}",
                 "form": []
             }
+        },
+        {
+            "_id": "fddf08e3-41a7-495b-aa9a-72d08fc3a1dd",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "c2c9e313-81e4-4b90-886d-e9f50bbf48bf",
+            "name": "Get statistics from player",
+            "url": "/playerStats/player/1",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-05-31T16:20:19.905Z",
+            "modified": "2024-06-01T15:23:16.136Z",
+            "headers": []
         },
         {
             "_id": "b62670cd-b355-4074-8623-faa9d624e220",
@@ -111,12 +283,255 @@
                 "raw": "{\n  \"name\": \"Bundesliga (DFB)\",\n  \"country\": \"Germany\"\n}",
                 "form": []
             }
+        },
+        {
+            "_id": "33527481-6f63-42a9-a462-e36f18d51708",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "28ea1e6b-baa6-4388-9dde-e0ffcd782060",
+            "name": "Get all teams",
+            "url": "/teams",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-05-28T07:25:56.778Z",
+            "modified": "2024-05-28T07:26:11.861Z",
+            "headers": []
+        },
+        {
+            "_id": "ed2d77bf-14c2-4027-a3e5-b5328ea8e948",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "28ea1e6b-baa6-4388-9dde-e0ffcd782060",
+            "name": "Get team by id",
+            "url": "/teams/2",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-05-28T07:30:03.263Z",
+            "modified": "2024-05-29T17:17:04.285Z",
+            "headers": []
+        },
+        {
+            "_id": "63af1611-e44c-4c32-8afa-2791987da334",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "901e694c-1ba2-4918-836a-88b2faae01c3",
+            "name": "Create new team",
+            "url": "/teams",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-05-28T07:41:21.903Z",
+            "modified": "2024-05-28T07:46:28.061Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Manchester City\",\n  \"leagueId\": 3,\n  \"city\": \"Manchester\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "469d9966-cb12-4c67-b76d-abff46105234",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "ea06c62b-9d5c-410c-b292-fe126d069663",
+            "name": "Delete team",
+            "url": "/teams/3",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2024-05-29T17:08:09.635Z",
+            "modified": "2024-05-29T17:14:08.348Z",
+            "headers": []
+        },
+        {
+            "_id": "00cb057e-d434-4d2a-8c04-545be946d571",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "ed1aa384-682a-4c9d-b451-eb48f6c1596f",
+            "name": "Update team",
+            "url": "/teams/2",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2024-05-29T17:14:39.377Z",
+            "modified": "2024-05-29T17:18:58.649Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Real VARdrid\",\n  \"leagueId\": 1,\n  \"city\": \"Madrid\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "aead41a7-69e3-4fba-95d2-4bbe0fdd6163",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "6c625093-84ac-4ff1-98c9-9c8e47e66cf0",
+            "name": "Create new player",
+            "url": "/players",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2024-05-29T17:37:23.924Z",
+            "modified": "2024-05-29T17:41:40.298Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Pau Sabat\",\n  \"teamId\": 1,\n  \"position\": \"Forward\",\n  \"age\": 25,\n  \"height\": 175,\n  \"weight\": 68\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7f6c8339-7d50-4d0f-81b0-38b581de4d2d",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "594fdca1-7c25-4b5f-a467-8e7f245b5433",
+            "name": "Delete player",
+            "url": "/players/13",
+            "method": "DELETE",
+            "sortNum": 150000,
+            "created": "2024-05-31T07:09:54.835Z",
+            "modified": "2024-05-31T07:10:12.775Z",
+            "headers": []
+        },
+        {
+            "_id": "73da47e6-6721-435b-ba51-2c1ecce27d07",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "d43639e8-6597-4338-853b-67753f06cce2",
+            "name": "Update a player",
+            "url": "/players/1",
+            "method": "PUT",
+            "sortNum": 160000,
+            "created": "2024-05-31T07:13:12.558Z",
+            "modified": "2024-05-31T07:14:42.140Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Lionel Andrés Messi\",\n    \"teamId\": 1,\n    \"position\": \"Forward\",\n    \"age\": 36,\n    \"height\": 170,\n    \"weight\": 72\n  }",
+                "form": []
+            }
+        },
+        {
+            "_id": "8b16f3fd-d5dd-415c-9098-d0ada4e5370c",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "573f62d7-ced2-4910-9eb4-e6fda3e5416f",
+            "name": "Create player statistics",
+            "url": "/playerStats",
+            "method": "POST",
+            "sortNum": 230000,
+            "created": "2024-05-31T16:28:31.045Z",
+            "modified": "2024-05-31T16:34:02.557Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"playerId\": 1,\n  \"season\": \"2021-2022\",\n  \"appearances\": 25,\n  \"goals\": 23,\n  \"assists\": 12,\n  \"yellowCards\": 3,\n  \"redCards\": 0\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "89e07e91-d27d-48e8-ba94-617d6e1b62f1",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "20faa784-5848-48d5-b39f-b04e49c75cee",
+            "name": "Delete single statsistics",
+            "url": "/playerStats/20",
+            "method": "DELETE",
+            "sortNum": 240000,
+            "created": "2024-05-31T16:43:01.859Z",
+            "modified": "2024-05-31T16:43:13.951Z",
+            "headers": []
+        },
+        {
+            "_id": "cb37cf3e-ef2b-432a-bca9-4f0e3e60cff5",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "20faa784-5848-48d5-b39f-b04e49c75cee",
+            "name": "Delete stats from player",
+            "url": "/playerStats/player/2",
+            "method": "DELETE",
+            "sortNum": 250000,
+            "created": "2024-05-31T16:43:26.191Z",
+            "modified": "2024-05-31T16:43:46.962Z",
+            "headers": []
+        },
+        {
+            "_id": "e5e55a79-839b-48e7-86db-0090123f7d36",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "226e60da-5e1b-4584-b8aa-15a58a22543d",
+            "name": "Update player stats record",
+            "url": "/playerStats/1",
+            "method": "PUT",
+            "sortNum": 260000,
+            "created": "2024-05-31T18:23:12.973Z",
+            "modified": "2024-05-31T18:24:59.431Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"playerId\": 1,\n  \"season\": \"2021-2022\",\n  \"appearances\": 25,\n  \"goals\": 23,\n  \"assists\": 12,\n  \"yellowCards\": 3,\n  \"redCards\": 0\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "c8c223b0-700a-477a-89a2-ac5fa8093fd3",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "c2c9e313-81e4-4b90-886d-e9f50bbf48bf",
+            "name": "Get top scorer",
+            "url": "/playerStats/topscorer",
+            "method": "GET",
+            "sortNum": 270000,
+            "created": "2024-06-01T15:20:55.158Z",
+            "modified": "2024-06-01T15:22:23.785Z",
+            "headers": []
+        },
+        {
+            "_id": "ce5b6b42-bc47-4b0b-ba09-d7c25c90d35b",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "c2c9e313-81e4-4b90-886d-e9f50bbf48bf",
+            "name": "Get top 3 assistants",
+            "url": "/playerStats/top3Assistants",
+            "method": "GET",
+            "sortNum": 280000,
+            "created": "2024-06-01T15:42:13.407Z",
+            "modified": "2024-06-01T15:43:04.010Z",
+            "headers": []
+        },
+        {
+            "_id": "fe81b5e0-c9be-4847-8fd2-6a9b08a2e46e",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "24912824-3f28-4b4e-95f3-68b7c160b80b",
+            "name": "Register",
+            "url": "/auth/register",
+            "method": "POST",
+            "sortNum": 290000,
+            "created": "2024-06-01T16:55:10.891Z",
+            "modified": "2024-06-01T18:46:18.093Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"hola@hola.com\",\n  \"password\": \"Password1234\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "3c8ded1b-819b-4134-aba5-5dd1189ab98b",
+            "colId": "9f0b0219-481b-4de6-8bc2-2a88d0f0dff5",
+            "containerId": "24912824-3f28-4b4e-95f3-68b7c160b80b",
+            "name": "Login",
+            "url": "/auth/login",
+            "method": "POST",
+            "sortNum": 300000,
+            "created": "2024-06-01T17:16:08.336Z",
+            "modified": "2024-06-01T18:46:38.544Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": ""
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"hola@hola.com\",\n  \"password\": \"Password1234\"\n}",
+                "form": []
+            }
         }
     ],
     "settings": {
+        "headers": [
+            {
+                "name": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhvbGFAaG9sYS5jb20iLCJpYXQiOjE3MTcyNjc1OTh9.5UMq47OvNSDlCaB8bKU_qLH9QmkDOJxkekkdrEY-X5s"
+            }
+        ],
         "options": {
             "baseUrl": "http://localhost:3000"
         }
     },
-    "ref": "IrTdzClz4AMAhS9xaCrwxu6Emj8slFPXfFSerr8NwOixbfvmZA9isjxMAuao-F75xu6Y0jutX7gu-pG7yWQgmw"
+    "ref": "IrTdzClz4AMAhS9xaCrwxu0ae1fcPAe2EGtBNletWqVrsHak4y70MSZxzMvbsLZfRD7i7ZH3KnIP_l9ozP47CQ"
 }
