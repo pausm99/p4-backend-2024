@@ -63,3 +63,8 @@ enum Position {
   Midfielder
   Forward
 }
+
+model User {
+  email    String @id
+  password String
+}

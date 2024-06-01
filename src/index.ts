@@ -6,8 +6,11 @@ import routes from './routes/index';
 
 const app = express()
 
+const corsOptions = {
+    allowedHeaders: ['Authorization', 'Content-Type'],
+  };
 
-app.use(cors())
+app.use(cors(corsOptions))
 app.use(express.json())
 
 app.use('/', routes)
