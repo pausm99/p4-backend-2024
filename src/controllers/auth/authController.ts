@@ -59,6 +59,6 @@ export class AuthController {
       },
     });
 
-    return send(res).createOk(user);
+    return send(res).createOk("User registered succesfully");
   });
 }
