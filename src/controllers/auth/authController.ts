@@ -28,7 +28,7 @@ export class AuthController {
     });
 
     if (!user) {
-      return send(res).unauthorized();
+      return send(res).unauthorized('Invalid credentials');
     }
 
     const hashedPassword = user.password;
@@ -36,7 +36,7 @@ export class AuthController {
     const passwordCorrect = await bcrypt.compare(password, hashedPassword);
 
     if (!passwordCorrect) {
-      return send(res).unauthorized();
+      return send(res).unauthorized('Invalid credentials');
     }
 
     const token = jwt.sign({ email: user.email }, JWT_SECRET_KEY);

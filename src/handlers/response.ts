@@ -19,7 +19,8 @@ export const send = (res: ExpressResponse) => {
         notFound: () => res.status(HttpStatusCode.NOT_FOUND).send('Not found'),
         badRequest: (msg: string) => res.status(HttpStatusCode.BAD_REQUEST).send(msg),
         notImplemented: () => res.status(HttpStatusCode.NOT_IMPLEMENTED).send('Not implemented'),
-        unauthorized: () => res.status(HttpStatusCode.UNAUTHORIZED).send('Invalid credentials'),
+        unauthorized: (msg: string) => res.status(HttpStatusCode.UNAUTHORIZED).send(msg),
+        forbidden: (msg: string) => res.status(HttpStatusCode.FORBIDDEN).send(msg),
         conflict: (msg: string) => res.status(HttpStatusCode.CONFLICT).send(msg),
         internalError: (msg: string) => res.status(HttpStatusCode.INTERNAL_SERVER_ERROR).send(msg),
     }
