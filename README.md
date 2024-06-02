@@ -5,10 +5,15 @@
 3. Abrir el cliente de Docker dependiendo del sistema operativo
 4. En la carpeta del proyecto, ejecutar ``docker-compose up -d``
 5. Ejecutar ``bunx prisma db push``
-6. Ejecutar ``bun prisma seed`` para llenar la base de datos
+6. Ejecutar ``bunx prisma db seed`` para llenar la base de datos
 7. Ejecutar ``bun run dev`` para iniciar el servidor
 8. Importar la colección de la API en Thunder Client
-9. Probar los endpoints de la colección
+9. Registrarse con el endpoint "Register"
+10. Log in con el endpoint "Login" - Retorna un token de autenticación
+11. Usar los endpoints con el token - Configurar en los settings de la collection (pestaña 'AUTH')
+  
+> [!IMPORTANT]
+> Es necesario tener un archivo .env para el correcto funcionamiento del proyecto
 
 # Backend en Typescript, Express y Prisma
 
