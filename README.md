@@ -1,3 +1,15 @@
+# Instrucciones de uso
+
+1. Clonar el repositorio
+2. ``bun install``
+3. Abrir el cliente de Docker dependiendo del sistema operativo
+4. En la carpeta del proyecto, ejecutar ``docker-compose up -d``
+5. Ejecutar ``bunx prisma db push``
+6. Ejecutar ``bun prisma seed`` para llenar la base de datos
+7. Ejecutar ``bun run dev`` para iniciar el servidor
+8. Importar la colección de la API en Thunder Client
+9. Probar los endpoints de la colección
+
 # Backend en Typescript, Express y Prisma
 
 Se trata de hacer un _backend_ usando Typescript, Express y Prisma. El _backend_ implementado en clase es el modelo a seguir. Para alumnos que lo hacen por primera vez y sienten algo de incomodidad, lo ideal es usar el modelo de guía y hacer un _backend_ cercano al original de tal manera que la práctica sea un repaso a fondo. Para los que estén más cómodos, lo ideal es innovar en algun aspecto y salirse parcialmente del modelo en ciertos momentos o explorar algún interés personal. El modelo de datos es directamente la práctica anterior.
